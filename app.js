@@ -21,6 +21,11 @@ app.use(cookieSession({
 
 app.use(require('./filters/response'));
 
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+app.use('/bt', express.static(__dirname + '/node_modules/bootstrap-table/dist'));
+app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
+app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
+
 // 路由处理
 rainbow.route(app, config.path);
 
