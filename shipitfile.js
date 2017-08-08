@@ -6,7 +6,7 @@ module.exports = function (shipit) {
 
     shipit.initConfig({
         default: {
-            workspace: '/tmp/dev',
+            workspace: '/tmp/workspace',
             deployTo: '/tmp/deploy',
             repositoryUrl: 'https://github.com/eeyoo/express-bootstrap.git',
             ignores: ['.git', 'node_modules'],
